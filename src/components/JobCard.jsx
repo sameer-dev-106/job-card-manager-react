@@ -6,6 +6,7 @@ const JobCard = ({ data, onDelete, onEdit }) => {
     <div
       className="
       min-w-67.5
+      max-w-87
       relative
       bg-white
       rounded-xl
@@ -14,6 +15,7 @@ const JobCard = ({ data, onDelete, onEdit }) => {
       flex
       flex-col
       items-center
+      justify-center
       gap-2
     "
     >
@@ -49,8 +51,8 @@ const JobCard = ({ data, onDelete, onEdit }) => {
         py-2 
         rounded-lg 
         bg-red-500
-        active:scale-95"
-      >
+        active:scale-95
+        ">
         Remove
       </button>
     </div>

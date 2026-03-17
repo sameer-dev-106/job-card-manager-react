@@ -48,7 +48,7 @@ const App = () => {
   };
 
   return (
-    <main className="min-h-screen bg-gray-200">
+    <main className="min-h-screen bg-gray-200 select-none">
       <section className="p-4 sm:flex sm:gap-4">
         {/* Desktop Form */}
         <div className="hidden sm:block sm:w-120">

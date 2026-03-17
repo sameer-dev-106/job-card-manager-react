@@ -28,8 +28,6 @@ const submitHandler = (e) => {
     });
 };
 
-
-
     const [formData, setFormData] = useState({
         imageUrl: "",
         userName: "",
@@ -55,96 +53,98 @@ const submitHandler = (e) => {
 
     return (
         <div className="
-        flex 
-        flex-col 
-        items-center
-        justify-center
-        bg-white
-        shadow-lg
-        rounded-2xl
-        md:py-7
+            h-screen
+            flex 
+            flex-col 
+            items-center
+            justify-center
+            bg-white
+            shadow-lg
+            rounded-2xl
+            sm:h-auto
+            md:py-7
         ">
             <h2 className='
-            text-2xl
-            font-semibold
+                text-2xl
+                font-semibold
             '>🪪 Job Card</h2>
             <form 
-            onSubmit={submitHandler}
-            className='
-            w-full
-            max-w-md
-            px-6
-            flex
-            flex-col
-            gap-3
-            sm:max-w-lg
+                onSubmit={submitHandler}
+                className='
+                w-full
+                max-w-md
+                px-6
+                flex
+                flex-col
+                gap-3
+                sm:max-w-lg
             '>
                 <label className='
-                text-base
-                font-medium
-                mt-2
+                    text-base
+                    font-medium
+                    mt-2
                 '>Image URL </label>
                 <input type="url" placeholder="https://example.com/photo.jpg" 
-                value={formData.imageUrl}
-                onChange={(e) => setFormData({ ...formData, imageUrl: e.target.value })}
-                className='
-                w-full
-                p-2
-                border-2
-                rounded-lg
+                    value={formData.imageUrl}
+                    onChange={(e) => setFormData({ ...formData, imageUrl: e.target.value })}
+                    className='
+                    w-full
+                    p-2
+                    border-2
+                    rounded-lg
 
                 ' />
 
                 <label className='
-                text-base
-                font-medium
-                mt-2
+                    text-base
+                    font-medium
+                    mt-2
                 '>Full Name</label>
                 <input type="text" placeholder="Enter name" 
-                value={formData.userName}
-                onChange={(e) => setFormData({ ...formData, userName: e.target.value })}
-                className='
-                w-full
-                p-2
-                border-2
-                rounded-lg
+                    value={formData.userName}
+                    onChange={(e) => setFormData({ ...formData, userName: e.target.value })}
+                    className='
+                    w-full
+                    p-2
+                    border-2
+                    rounded-lg
 
                 ' />
 
                 <label className='
-                text-base
-                font-medium
-                mt-2
+                    text-base
+                    font-medium
+                    mt-2
                 '>Job Role</label>
                 <input type="text" placeholder='Enter job role' 
-                value={formData.role}
-                onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                className='
-                w-full
-                p-2
-                border-2
-                rounded-lg
+                    value={formData.role}
+                    onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                    className='
+                    w-full
+                    p-2
+                    border-2
+                    rounded-lg
                 ' />
 
                 <label className='
-                text-base
-                font-medium
-                mt-2
+                    text-base
+                    font-medium
+                    mt-2
                 '>Description</label>
                 <input type='text' placeholder='Enter your description'
-                value={formData.desc}
-                onChange={(e) => setFormData({ ...formData, desc: e.target.value })}
-                className="w-full p-2 border-2 rounded-lg"
+                    value={formData.desc}
+                    onChange={(e) => setFormData({ ...formData, desc: e.target.value })}
+                    className="w-full p-2 border-2 rounded-lg"
                 />
 
                 <label className='
-                text-lg
-                font-medium
-                mt-2'
+                    text-lg
+                    font-medium
+                    mt-2'
                 >Time Zone</label>
                 <label className='
-                text-base
-                font-medium
+                    text-base
+                    font-medium
                 '>
                     <input
                     
@@ -160,8 +160,8 @@ const submitHandler = (e) => {
                 </label>
                 
                 <label className='
-                text-base
-                font-medium
+                    text-base
+                    font-medium
                 '>
                     <input
                     
@@ -175,19 +175,19 @@ const submitHandler = (e) => {
                 </label>
 
                 <button 
-                disabled={!formData.userName}
-                className='
-                disabled:opacity-50
-                disabled:cursor-not-allowed
-                text-xl
-                font-semibold
-                bg-red-700
-                text-white
-                rounded-2xl
-                p-2
-                mt-1
-                hover:bg-red-400
-                active:scale-95
+                    disabled={!formData.userName}
+                    className='
+                    disabled:opacity-50
+                    disabled:cursor-not-allowed
+                    text-xl
+                    font-semibold
+                    bg-red-700
+                    text-white
+                    rounded-2xl
+                    p-2
+                    mt-1
+                    hover:bg-red-400
+                    active:scale-95
                 '>
                     {editData ? "Update Card" : "Create Card"}
                 </button>

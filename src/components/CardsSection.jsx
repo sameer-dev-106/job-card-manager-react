@@ -8,7 +8,7 @@ const CardsSection = ({ cards, onAdd, onDelete, onEdit }) => {
             {/* Add button mobile */}
             <button
                 onClick={onAdd}
-                className="sm:hidden fixed bottom-6 right-6 bg-red-700 text-white px-4 py-3 rounded-full"
+                className="sm:hidden fixed bottom-6 right-6 z-10 bg-red-700 text-white px-4 py-3 rounded-full"
             >
                 + Add
             </button>
@@ -18,7 +18,7 @@ const CardsSection = ({ cards, onAdd, onDelete, onEdit }) => {
                 className="
                 grid
                 grid-cols-1
-                sm:grid-cols-2
+                sm:grid-cols-1
                 xl:grid-cols-3
                 gap-4
                 ">
